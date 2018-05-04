@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Latitude Weather Analysis</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Wind Speed</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -22,9 +22,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Latitude with Attitude</a>
+                <a class="navbar-brand" href="index.html">Latitude with Attiude</a>
             </div>
-
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -60,71 +59,50 @@
             <div class="col-md-12">
                 <div class="sigline">
                     <p>
-                           |
+                        
                     </p>
                 </div>
             </div>
         </div>
     </nav>
 
-
     <div class="container">
         <div class="row row-grid">
+
             <div class="col-md-8">
                 <div class="box box-left">
                     <section id="intro">
-                        <h1>Summary: Latitude vs. X</h1>
+                        <h1>Windiness</h1>
                         <hr>
                         <figure>
-                            <a target="_blank" href="Ploting_graph_of_Cities.png">
-                                <img id="temp-sample" src="Ploting_graph_of_Cities.png" alt="Latitude vs. Temperature">
+                            <a target="_blank" href="Wind_Speed_Latitude.png">
+                                <img id="viz-main" src="Wind_Speed_Latitude.png" alt="Latitude vs. Wind Speed">
                             </a>
                         </figure>
 
-                        <section id="summary">                    
-                               
-                               
-
-                            <p>The purpose of this project was to analyze how weather changes as you get closer to the equater. 
-                               To accomplish this analysis. we first pulled data from the OpenWeatherMapAPI to 
-                               assemble a dataset on over 500 cities. 
+                        <section id="summary">
+                            <p>There is no clustering or pattern of wind speed around the equator. The data seems to prove out
+                                the Coriolis Effect, such that the latitude will impact the direction of the wind, but not
+                                the speed of the wind.
                             </p>
-                            
-                             
-                            <p> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. 
-                                latitude. Factors we looked at included:temperature, cloudiness, windspeed, and humidity. This
-                                site provides the source data and visualizations created as part of the analysis,as well as
-                                explanations and descriptions of any trends and correlations witnessed.
-                            </p>
-
-                            
-
-                            <ul>
-                                <li>Temperature (C) vs. Latitude</li>
-                                <li>Humidity (%) vs. Latitude</li>
-                                <li>Cloudiness (%) vs. Latitude</li>
-                                <li>Wind Speed (mph) vs. Latitude</li>
-
-                            </ul>
-                         
                         </section>
 
                     </section>
                 </div>
             </div>
 
-           
+
             <div class="col-md-4">
                 <div class="box box-right">
                     <h2>Visualizations</h2>
                     <hr>
 
-                    
+
                     <div class="row">
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
                                 <a href="temp.html">
-                                    <img id="landing-viz" src="Temp_Latitude.png" alt="Latitude vs. Temperature"  >
+                                    <img id="landing-viz" src="Temp_Latitude.png" alt="Latitude vs. Temperature">
                                 </a>
                             </figure>
                         </div>
@@ -132,7 +110,7 @@
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
                                 <a href="humid.html">
-                                    <img id="landing-viz" src="Humidity_Latitude.png" alt="Latitude vs. Humidity" >
+                                    <img id="landing-viz" src="Humidity_Latitude.png" alt="Latitude vs. Humidity">
                                 </a>
                             </figure>
                         </div>
@@ -148,7 +126,7 @@
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <figure>
                                 <a href="wind.html">
-                                    <img id="landing-viz" src="Wind_Speed_Latitude.png"  alt="Latitude vs. Wind Speed" > 
+                                    <img id="landing-viz" src="Wind_Speed_Latitude.png" alt="Latitude vs. Wind Speed">
                                 </a>
                             </figure>
                         </div>
@@ -161,13 +139,11 @@
     </div>
 
 
-
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous">
         </script>
-
 </body>
 
 </html>
